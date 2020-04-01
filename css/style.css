@@ -1,0 +1,229 @@
+/* GENERALES */
+html{
+    font-size: 62.5%;/* 1 REM = 10px */
+}
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1, h2, h3, h4{
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+h1{
+    font-size: 4.8rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 3.2rem;
+}
+
+img{
+    max-width: 100%;
+}
+/* INDEX */
+/* HEADER-INDEX */
+header {
+    background-image: url('/img/banner.jpg');
+    padding: 0 5%;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+@media (min-width: 768px){
+    .contenedor-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .contenedor-header nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contenedor-header nav ul li{
+        margin-left: 2rem;
+    }
+}
+.logo-principal{
+    text-align: center;
+    padding-top: 3rem;
+    font-weight: 400;
+}
+
+.logo-principal span{
+    font-weight: 700;
+}
+
+nav ul{
+    display: unset;
+    text-align: center;
+}
+
+nav ul li{
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.leyenda-header{
+    margin-top: 15rem;
+    color: white;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.leyenda-header p{
+    font-size: 2.2rem;
+}
+/* FIN HEADER INDEX */
+
+/* MAIN INDEX */
+main{
+    padding: 4rem 5%;
+}
+
+main h2{
+    font-weight: bold;
+    margin-bottom: 5rem;
+}
+
+main article{
+    padding-bottom: 5rem;
+}
+
+main article p{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+main article:first-of-type {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+main article:last-of-type {
+    padding-top: 4rem;
+}
+
+main article p span{
+    font-weight: 300;
+}
+
+main article button{
+    background-color: #784d3c;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-weight: 700;
+    border: none;
+    width: 100%;
+    padding: 2rem 0;
+}
+/* FIN MAIN INDEX */
+
+/* INICIO SECTION INDEX */
+.nuestro-blog{
+    padding: 0 5%;
+}
+
+.nuestro-blog h2{
+    margin-bottom: 3.5rem;
+}
+
+.nuestro-blog article{
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #e1e1e1;;
+}
+
+.nuestro-blog article:first-of-type{
+    padding-top: unset;
+}
+
+.nuestro-blog article:last-of-type{
+    border-bottom: none;
+}
+
+.nuestro-blog article h3{
+    margin: 3rem 0;
+}
+
+.nuestro-blog article p{
+    font-size: 1.6rem;
+    line-height: 3.5rem;
+}
+
+.nuestro-blog article button{
+    background-color: #784d3c;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-weight: 700;
+    border: none;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+@media (min-width: 768px){
+    .contenedor-cursos-blog{
+        display: grid;
+        grid-template-columns: 60% 30%;
+        column-gap: 3rem;
+    }
+
+    main{
+        grid-column: 2 / 3;
+        grid-row: 1/2;
+    }
+
+    .nuestro-blog{
+        padding: 4rem 0 4rem 10%;
+    }
+
+    main article button{
+        width: 90%;
+        padding: 2rem;
+    }
+}
+/*FIN SECTION INDEX */
+
+/* INICIO FOOTER INDEX */
+    footer{
+        background-color: black;
+        padding: 3rem 0
+    }
+
+    footer p{
+        color: white;
+        text-align: center;
+        font-size: 3.6rem;
+        margin: 0;
+    }
+
+    footer p span{
+        font-weight: 700;
+    }
+/* FIN FOOTER INDEX */
