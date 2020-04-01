@@ -291,3 +291,77 @@ main article button{
 }
 
 /* FIN MAIN CURSOS*/
+
+/* INICIO CONTACTO */
+
+form{
+    background-color: white;
+    margin-top: 4rem;
+    padding: 0 5%;
+}
+
+.contenedor-nombre, .contenedor-email, .contenedor-mensaje{
+    display: grid;
+    grid-template-columns: 4rem auto;
+    text-align: right;
+    padding-bottom: 2rem;
+    align-items: center;
+}
+
+.contenedor-mensaje{
+    align-items: unset;
+}
+
+.contenedor-mensaje label{
+    margin-top: 1rem;
+}
+.contenedor-nombre label, .contenedor-email label, .contenedor-mensaje label{
+    font-size: 1.3rem;
+}
+
+.contenedor-email input, .contenedor-mensaje textarea, .contenedor-nombre input{
+    flex: 1;
+    margin-left: 2rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+textarea {
+    resize: vertical;
+  }
+
+.contenedor-submit{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+form button{
+    background-color: black;
+    color:white;
+    border: none;
+    text-transform: uppercase;
+    padding: 1rem 3rem;
+    font-weight: 700;
+}
+
+@media (min-width: 768px){
+    /*.contenedor-formulario{
+        padding-top: 5rem;
+        margin-top: -15rem;
+        background-color: white;
+    }
+    */
+    .contenedor-submit{
+        display: flex;
+        justify-content: right;
+    }
+    form button{
+        background-color: black;
+        color:white;
+        border: none;
+        text-transform: uppercase;
+        padding: 1rem 3rem;
+        font-weight: 700;
+    }
+}
+/* FIN CONTACTO */
