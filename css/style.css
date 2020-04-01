@@ -118,7 +118,7 @@ main h2{
 }
 
 main article{
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
 }
 
 main article p{
@@ -126,12 +126,13 @@ main article p{
     font-size: 2rem;
 }
 
-main article:first-of-type {
+main article {
     border-bottom: 1px solid #e1e1e1;
 }
 
 main article:last-of-type {
     padding-top: 4rem;
+    border-bottom: none;
 }
 
 main article p span{
@@ -266,3 +267,27 @@ main article button{
     }
 }
 /* FIN MAIN NOSOTROS */
+
+/* MAIN CURSOS */
+
+.main-cursos article {
+    padding-top: 4rem;
+}
+
+.main-cursos article h3{
+    margin-top: 2rem;
+}
+
+.main-cursos article p:last-of-type{
+    font-weight: 300;
+}
+
+@media (min-width: 768px){
+    .contenedor-cursos article{
+        display: grid;
+        grid-template-columns: 33% 66%;
+        column-gap: 2rem;
+    }
+}
+
+/* FIN MAIN CURSOS*/
