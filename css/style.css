@@ -19,6 +19,10 @@ button:hover {
     cursor: pointer;
 }
 
+p{
+    font-size: 1.6rem;
+}
+
 ul {
     list-style-type: none;
     display: flex;
@@ -54,7 +58,7 @@ header {
     background-size: cover;
     height: 100vh;
 }
-@media (min-width: 768px){
+@media (min-width: 1024px){
     .contenedor-header{
         display: flex;
         align-items: center;
@@ -70,6 +74,7 @@ header {
         margin-left: 2rem;
     }
 }
+
 .logo-principal{
     text-align: center;
     padding-top: 3rem;
@@ -227,3 +232,37 @@ main article button{
         font-weight: 700;
     }
 /* FIN FOOTER INDEX */
+
+/* INICIO NOSOTROS */
+/* MAIN NOSOTROS */
+.main-nosotros{
+    padding: 0 5%;
+    margin: 4rem 0;
+}
+
+.main-nosotros h2{
+    text-align: center;
+}
+
+.contenedor-main-nosotros{
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen-nosotros{
+    width: 100%;
+}
+
+@media (min-width: 768px){
+    .main-nosotros{
+        padding: 0 10%;
+    }
+
+    .contenedor-main-nosotros{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        align-items: center;
+    }
+}
+/* FIN MAIN NOSOTROS */
