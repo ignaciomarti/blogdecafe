@@ -47,17 +47,18 @@ h3{
 }
 
 img{
-    max-width: 100%;
+    width: 100%;
 }
 /* INDEX */
 /* HEADER-INDEX */
 header {
-    background-image: url('/img/banner.jpg');
+    background-image: url('../img/banner.jpg');
     padding: 0 5%;
     background-position: center center;
     background-size: cover;
     height: 100vh;
 }
+
 @media (min-width: 1024px){
     .contenedor-header{
         display: flex;
@@ -295,9 +296,7 @@ main article button{
 /* INICIO CONTACTO */
 
 form{
-    background-color: white;
-    margin-top: 4rem;
-    padding: 0 5%;
+    
 }
 
 .contenedor-nombre, .contenedor-email, .contenedor-mensaje{
@@ -344,17 +343,30 @@ form button{
     font-weight: 700;
 }
 
+.contenedor-formulario{
+    margin-top: 5rem;
+}
+
+.titulo-contacto{
+    margin-top: 3rem;
+    text-align: center;
+}
+
 @media (min-width: 768px){
-    /*.contenedor-formulario{
-        padding-top: 5rem;
-        margin-top: -15rem;
+    .contenedor-formulario{
+        margin: -10rem 5% 0 5%;
+        z-index: 20;
         background-color: white;
+        padding: 5rem 5%;
+        position:relative; 
+        z-index: 10;
     }
-    */
+
     .contenedor-submit{
         display: flex;
         justify-content: right;
     }
+
     form button{
         background-color: black;
         color:white;

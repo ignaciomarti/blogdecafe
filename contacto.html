@@ -13,11 +13,13 @@
 
 <body>
     <div class="contenedor">
-        <header>
-            <div class="contenedor-header">
+        <header  class="header-paginas-internas">
                 <a href="index.html"><h1 class="logo-principal">Blog<span>DeCafé</span></h1></a>
                 <nav>
                     <ul>
+                        <a href="index.html">
+                            <li>Home</li>
+                        </a>
                         <a href="nosotros.html">
                             <li>Nosotros</li>
                         </a>
@@ -29,33 +31,31 @@
                         </a>
                     </ul>
                 </nav>
-            </div>
-
-            <div class="leyenda-header">
-                <h2>Blog de Café con consejos y cursos</h2>
-                <p>Aprendé de los expertos con las mejores recetas y consejos</p>
-            </div>
+                <div class="leyenda-header">
+                    <h2>Blog de Café con consejos y cursos</h2>
+                    <p>Aprendé de los expertos con las mejores recetas y consejos</p>
+                </div>
         </header>
-        
+        <h2 class="titulo-contacto">Contacto</h2>
         <main class="main-contacto">
             <div class="contenedor-imagen-contacto">
-                <img src="/img/contacto.jpg" alt="Foto de la página de contacto">
+                <img src="img/contacto.jpg" alt="Foto de la página de contacto">
             </div>
             <div class="contenedor-formulario">
                 <form action="contacto.html" method="POST">
                     <div class="contenedor-nombre">
                         <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" id="nombre" placeholder="Tu nombre">
+                        <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" required>
                     </div>
 
                     <div class="contenedor-email">
                         <label for="email">E-mail</label>
-                        <input type="email" name="email" id="emial" placeholder="Tu email">
+                        <input type="email" name="email" id="emial" placeholder="Tu email" required>
                     </div>
 
                     <div class="contenedor-mensaje">
                         <label for="mensaje">Mensaje</label>
-                        <textarea name="mensaje" id="mensaje" cols="disabled" rows="10"></textarea>
+                        <textarea name="mensaje" id="mensaje" cols="disabled" rows="10" required></textarea>
                     </div>
 
                     <div class="contenedor-submit">
